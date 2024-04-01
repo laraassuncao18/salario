@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 4;
+  }
+
+  form {
+    width: 400px;
+    padding: 400px; 
+    border: 20px solid #ccc;
+    border-radius: 30px;
+    background-color:rgb(219, 185, 219);
+  }
+
+  .submit {
+    display: block;
+    margin-bottom: 20px;
+    background-color:rgb(158, 213, 223);
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 80%;
+    padding: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 400px;
+    background-color: rgb(167, 157, 184);
+    
+    cursor: pointer;
+  }
+
+  
