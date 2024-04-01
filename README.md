@@ -1,15 +1,17 @@
-## 💋🦄FORMULARIO DE SALARIO
+# 💋🦄FORMULARIO DE SALARIO
 
-Pimeiro eu fiz um formulario de metas php, adicionei nome do vendedor, Meta semanal 1,2,3,4 e meta do mes.criei o css para fazer o designer da pagina do formulario de salario.
-Função do formulario:
+Pimeiro eu fiz um formulario de metas php, adicionei nome do vendedor, Meta semanal 1,2,3,4 e meta do mes.ai fui adicionando cor a borda arrumando o titulo que, por algum motivo n ficava no centro da pagina e foi se formando o disigner da pagina comforme meu gosto.
+
+## 🌼Função do formulario:
+A função é calcular a porcentagem 
 
 
-# 🌼autores:
+## 🌼autores:
 * Lara
 * Leo
 
 
-# 🌼Metodos Utilizados:
+## 🌼Metodos Utilizados:
 * xampp
 * vs code
 * git hub
