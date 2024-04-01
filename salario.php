@@ -32,39 +32,65 @@
 
   <label for="meta do mes 5">Meta do mes :</label><br>
   <input type="number" id="meta do mes " name="metadomes" min="0" required><br><br>
-
-
-
-  <input type="submit" value="Enviar">
+  <button class="glow-on-hover" type="submit">CALCULAR</button>
 </form>
 <h2>Calculadora de Porcentagem</h2>
 
 <?php
-// Verifica se os valores foram enviados via formulário
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtém os valores do formulário
-    $valorObtido = $_POST["valor_obtido"];
-    $meta = $_POST["meta"];
+    
     $nomeFuncionario = $_POST["nome"];
-    $metaSemana1 =$_POST["metaSemanal1"];
-    $metaSemana2 =$_post["metaSemanal2"];
-    $metaSemana3 =$_post["metaSemanal3"];
-    $metaSemana4 =$_post["metaSemanal4"];
-    $metadomes =$_post["metadomes"];
-    $salMes = 1927.02;
-    
+    $metaSemana1 = $_POST["metaSemana1"];
+    $metaSemana2 = $_POST["metaSemana2"];
+    $metaSemana3 = $_POST["metaSemana3"];
+    $metaSemana4 = $_POST["metaSemana4"];
 
-    // Calcula a porcentagem
-    $porcentagem = ($valorObtido / $meta) * 100;
     
-    // Exibe o resultado
-    echo "Valor obtido: $valorObtido<br>";
-    echo "Meta: $meta<br>";
-    echo "Porcentagem: " . number_format($porcentagem, 2) . "%";
+    $totalVendasSemanais = $vendasSemana1 + $vendasSemana2 + $vendasSemana3 + $vendasSemana4;
+
+    
+    $metaSemanal = 20000; 
+    $metaMensal = 80000; 
+    $salarioMinimo = 1100; 
+
+    
+    $pagamentoBase = $salarioMinimo;
+    $bonificacaoSemanal = 0;
+    $bonificacaoMensal = 0;
+
+    
+    if ($totalVendasSemanais >= $metaSemanal) {
+        $bonificacaoSemanal = ($metaSemanal * 0.01); 
+      
+        $excedenteSemanal = $totalVendasSemanais - $metaSemanal;
+        
+        $bonificacaoSemanal += ($excedenteSemanal * 0.05); 
+
+        
+        if ($totalVendasSemanais >= $metaMensal) {
+            
+            $excedenteMensal = $totalVendasSemanais - $metaMensal;
+            
+            $bonificacaoMensal = $excedenteMensal * 0.10; 
+        }
+    }
+
+    
+    $pagamentoTotal = $pagamentoBase + $bonificacaoSemanal + $bonificacaoMensal;
+
+    
+    echo "<h2>Resultados</h2>";
+    echo "<p>Nome do Funcionário: $nomeFuncionario</p>";
+    echo "<p>Total de Vendas Semanais: $totalVendasSemanais</p>";
+    echo "<p>Pagamento Base (Salário Mínimo): R$ $salarioMinimo</p>";
+    echo "<p>Bonificação Semanal: R$ " . number_format($bonificacaoSemanal, 2) . "</p>";
+    echo "<p>Bonificação Mensal: R$ " . number_format($bonificacaoMensal, 2) . "</p>";
+    echo "<p>Pagamento Total: R$ " . number_format($pagamentoTotal, 2) . "</p>";
+} else {
+    echo " O formulário não foi submetido.";
 }
-
 ?>
 
 
-</body>
-</html>
+</body></html>
