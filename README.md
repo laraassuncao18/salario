@@ -9,7 +9,7 @@ os  parâmetros  para  que  o  Sistema  calcule  o  salário  final  de  um vend
 
 ## 🌼autores:
 * [lara](https://github.com/laraassuncao18)
-* [Leo] 
+* [Leo] (https://github.com/LeonardoRochaMarista)
 
 
 ## 🌼Metodos Utilizados:

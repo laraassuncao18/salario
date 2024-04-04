@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #6a0dad;
+}
+
+form {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    
+}
+
+label,
+input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    
+   
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50; /* verde */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* verde mais escuro */
+}
+
+.mensagens {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mensagens p {
+    margin-bottom: 10px;
+}
