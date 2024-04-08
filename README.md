@@ -25,5 +25,5 @@ Um formulario   que  o  Sistema  calcula  o  salário  final  de  um vendedor.El
 
 # Onde me achar
 
-[linkedin:] (https://www.linkedin.com/posts/lara-linda-b9b7032bb_no-curso-de-t%C3%A9cnico-em-informatica-programa%C3%A7%C3%A3o-activity-7183047305028141056-744v?utm_source=share&utm_medium=member_android)
+* [linkedin:] (https://www.linkedin.com/posts/lara-linda-b9b7032bb_no-curso-de-t%C3%A9cnico-em-informatica-programa%C3%A7%C3%A3o-activity-7183047305028141056-744v?utm_source=share&utm_medium=member_android)
 
