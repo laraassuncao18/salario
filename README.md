@@ -9,7 +9,7 @@ um formulario   que  o  Sistema  calcula  o  salário  final  de  um vendedor.El
 
 ## 🌼autores:
 * [lara](https://github.com/laraassuncao18)
-* [Leo] (https://github.com/LeonardoRochaMarista)
+* [Leo](https://github.com/LeonardoRochaMarista)
 
 
 ## 🌼Metodos Utilizados:
